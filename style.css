@@ -1,0 +1,29 @@
+h1{
+  font-family: monospace;
+  margin: 0;
+}
+.newHeadings{
+  color: white;
+  text-align: center;
+}
+header{
+  background-color: #171717;
+  width: 100%;
+  height: 100px;
+
+
+}
+footer{
+  background-color: #171717;
+  width: 100%;
+  height: 200px;
+  margin-top: 176px;
+}
+body{
+  background: #575757;
+}
+
+#myContainer{
+  width: 500px;
+  margin: 0px auto;
+}
