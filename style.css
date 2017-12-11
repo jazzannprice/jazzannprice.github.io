@@ -1,29 +1,73 @@
+/* All of the h1 adjustments */
 h1{
-  font-family: monospace;
+  font-family: verdana;
   margin: 0;
-}
-.newHeadings{
-  color: white;
+  color: black;
   text-align: center;
+  font-size: 110%;
+  padding:20px;
 }
+
+/* All of the h2 adjustments */
+h2{
+  font-family: verdana;
+  margin: 0;
+  color: black;
+  font-size: 100%;
+  padding:20px;
+}
+
+/* The individual header properties, including the colour, font size and positioning */
 header{
-  background-color: #171717;
+  font-size: 150%;
+  background-color: #698C8C;
   width: 100%;
   height: 100px;
-
-
 }
-footer{
-  background-color: #171717;
+
+/* The header decoration */
+#rectangle{
   width: 100%;
-  height: 200px;
-  margin-top: 176px;
-}
-body{
-  background: #575757;
+  height: 10px;
+  background: #C2EBEB;
 }
 
+/* The individual footer properties, including the colour and positioning */
+footer{
+  background-color: #698C8C;
+  width: 100%;
+  height: 100px;
+}
+
+/* The smaller text adjustments inside the footer */
+.newFooter{
+  font-size: 90%;
+  padding:5px;
+}
+
+/* Background colour */
+body{
+  background: #C2EBEB;
+}
+
+/* Positioning of the canvas */
 #myContainer{
-  width: 500px;
-  margin: 0px auto;
+  margin-left: 35%;
+}
+
+/* The rest below is the positioning of the elements on the page */
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+.imgContainer{
+  padding-top: 80px;
+  margin-left: 30%;
 }

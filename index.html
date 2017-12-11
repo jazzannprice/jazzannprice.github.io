@@ -2,20 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>P5.Js Exercise 5 - Interactive Color Grid</title>
-    <link type="text/css" rel="stylesheet" href = "style.css"/>
-    <script src="libraries/p5.js" type="text/javascript"></script>
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="libraries/p5.sound.js" type="text/javascript"></script>
-    <script src="sketch.js" type="text/javascript"></script>
+    <title>JasminePrice-405</title> <!-- Title of the webpage -->
+    <link type="text/css" rel="stylesheet" href = "style.css"/> <!-- Link to the CSS stylesheet -->
+    <script src="libraries/p5.js" type="text/javascript"></script> <!-- Link to the p5 library -->
+    <script src="libraries/p5.dom.js" type="text/javascript"></script> <!-- Link to the p5 library -->
+    <script src="libraries/p5.sound.js" type="text/javascript"></script> <!-- Link to the p5 library -->
+    <script src="sketch.js" type="text/javascript"></script> <!-- Link to the JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js" type="text/javascript"></script>
     <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
   </head>
   <body>
-    <header><h1 class = "newHeadings"> This is a heading </h1></header>
-    <div id="myContainer"></div>
-
-    <h1>Top</h1>
-    <footer></footer>
+    <header><h1> Jasmine Price - Generative Art </h1>
+      <div id="rectangle"> </div> <!-- Creates the header decoration -->
+    </header> <!-- Creates the header of my page -->
+      <div class="container"> <!-- Creates a divider for adjusting the position of the elements on page -->
+        <div class="left"> <!-- Creates a divider for adjusting the position of the elements on page -->
+          <div id="myContainer"></div> <!-- Creates a divider for my canvas -->
+        </div>
+          <div class="right"> <!-- Creates a divider for adjusting the position of the elements on page -->
+            <div class="imgContainer"> <!-- Creates a divider for adjusting the position of the elements on page -->
+              <div id="imageText"> <h2> Here are some examples: </h2> </div> <!-- Creates a divider for displaying text -->
+                <div id="images"> <!-- Divider for the images -->
+                <img src="example1.png" alt ="example1" width="200" height"200"> <!-- Link to the image -->
+                <img src="example2.png" alt ="example2" width="200" height"200"> <!-- Link to the image -->
+                </div>
+                <div id="images2"> <!-- Divider for the images -->
+                <img src="example3.png" alt ="example3" width="200" height"200"> <!-- Link to the image -->
+                <img src="example4.png" alt ="example4" width="200" height"200"> <!-- Link to the image -->
+              </div>
+            </div>
+          </div>
+        </div>
+    <footer><h1> 405-Creative Coding Project </h1><h1 class = "newFooter"> Press and hold the mouse down to draw! </h1> </footer> <!-- Creates the footer of my page -->
   </body>
 </html>
