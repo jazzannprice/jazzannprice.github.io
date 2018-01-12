@@ -12,27 +12,37 @@
     <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
   </head>
   <body>
-    <header><h1> Jasmine Price - Generative Art </h1>
-      <div id="rectangle"> </div> <!-- Creates the header decoration -->
+    <header><h1> Jasmine Price - Pokemon Database <img id="pokeball_img" src="pokeball.png" alt="Pokeball"></h1>
     </header> <!-- Creates the header of my page -->
+    <img id="bulbasaur_img" src="bulbasaur.png" alt="Pokemon"> <!-- Creates an image -->
+    <div id="imageText"> <h3> Select a Pokemon type </h3> <h3> or ALL the types! </h3> </div> <!-- Creates a text divider -->
+    <div id="checkboxes">
+      <form id="form1"> <!-- Creates a form with all the checkboxes inside that allow the user to select a Pokemon type -->
+        <input type="radio" name="poketype" value="bug" onclick="buttonpressed()"> Bug <br>
+        <input type="radio" name="poketype" value="dark" onclick="buttonpressed()"> Dark <br>
+        <input type="radio" name="poketype" value="dragon" onclick="buttonpressed()"> Dragon <br>
+        <input type="radio" name="poketype" value="electric" onclick="buttonpressed()"> Electric <br>
+        <input type="radio" name="poketype" value="fairy" onclick="buttonpressed()"> Fairy <br>
+        <input type="radio" name="poketype" value="fighting" onclick="buttonpressed()"> Fighting <br>
+        <input type="radio" name="poketype" value="fire" onclick="buttonpressed()"> Fire <br>
+        <input type="radio" name="poketype" value="flying" onclick="buttonpressed()"> Flying <br>
+        <input type="radio" name="poketype" value="ghost" onclick="buttonpressed()"> Ghost <br>
+        <input type="radio" name="poketype" value="grass" onclick="buttonpressed()"> Grass <br>
+        <input type="radio" name="poketype" value="ground" onclick="buttonpressed()"> Ground <br>
+        <input type="radio" name="poketype" value="ice" onclick="buttonpressed()"> Ice <br>
+        <input type="radio" name="poketype" value="normal" onclick="buttonpressed()"> Normal <br>
+        <input type="radio" name="poketype" value="poison" onclick="buttonpressed()"> Poison<br>
+        <input type="radio" name="poketype" value="psychic" onclick="buttonpressed()"> Psychic <br>
+        <input type="radio" name="poketype" value="rock" onclick="buttonpressed()"> Rock <br>
+        <input type="radio" name="poketype" value="steel" onclick="buttonpressed()"> Steel <br>
+        <input type="radio" name="poketype" value="water" onclick="buttonpressed()"> Water <br>
+        <input type="radio" name="poketype" value="All" onclick="buttonpressed()"> ALL <br>
+      </form>
+    </div>
+    <button id="refresh" type="button" onclick="history.go()">Refresh</button> <!-- Creates a button that refreshes the page -->
       <div class="container"> <!-- Creates a divider for adjusting the position of the elements on page -->
-        <div class="left"> <!-- Creates a divider for adjusting the position of the elements on page -->
-          <div id="myContainer"></div> <!-- Creates a divider for my canvas -->
-        </div>
-          <div class="right"> <!-- Creates a divider for adjusting the position of the elements on page -->
-            <div class="imgContainer"> <!-- Creates a divider for adjusting the position of the elements on page -->
-              <div id="imageText"> <h2> Here are some examples: </h2> </div> <!-- Creates a divider for displaying text -->
-                <div id="images"> <!-- Divider for the images -->
-                <img src="example1.png" alt ="example1" width="200" height"200"> <!-- Link to the image -->
-                <img src="example2.png" alt ="example2" width="200" height"200"> <!-- Link to the image -->
-                </div>
-                <div id="images2"> <!-- Divider for the images -->
-                <img src="example3.png" alt ="example3" width="200" height"200"> <!-- Link to the image -->
-                <img src="example4.png" alt ="example4" width="200" height"200"> <!-- Link to the image -->
-              </div>
-            </div>
-          </div>
-        </div>
-    <footer><h1> 405-Creative Coding Project </h1><h1 class = "newFooter"> Press and hold the mouse down to draw! </h1> </footer> <!-- Creates the footer of my page -->
+        <div id="myContainer"></div> <!-- Creates a divider for my canvas -->
+      </div>
+    <footer><h1> Data Visualization </h1><h1 class = "newFooter"> 405-Creative Coding Project </h1></footer> <!-- Creates the footer of my page -->
   </body>
 </html>
