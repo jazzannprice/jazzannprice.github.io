@@ -24,14 +24,14 @@
 			original.prepend($div);
 		    $div.css(copybackground());
 		    $div.css('background-image', 'url(' + args.images[0] + ')');
-
+			
 			// This element background none
 			original.css('background', 'none');
-
+		    
 		    // Clone bg element
 		    $div2 = $div.clone();
 		    $div.after($div2);
-
+			
 			// Set postion
 			$div.css(copyPosition());
 			$div2.css(copyPosition());
@@ -88,7 +88,7 @@
 			var slide = function() {
 				if (current == args.images.length - 1) current = 0;
 				else current++;
-
+				
 				if (count == 0) {
 					$div2.fadeOut(options.speed);
 					$div.css('background-image', 'url(' + args.images[current] + ')').fadeIn(options.speed);
@@ -98,7 +98,7 @@
 					$div2.css('background-image', 'url(' + args.images[current] + ')').fadeIn(options.speed);
 					count = 0;
 				}
-			}
+			}		
 
 			setInterval(function() {slide();}, options.interval);
 		});

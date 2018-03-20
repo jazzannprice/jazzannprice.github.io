@@ -16,15 +16,38 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.navbar{
+  z-index: 10000;
+}
 
 #header{
   text-align: center;
   background-color: #fff;
+  position: relative;
+  height: 100%;
 }
+
+#header ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+#header div{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 /* Makes these sections 100% of the screen */
 #about, #contact{
   height: 100%;
+}
+
+.aboutContainer{
+  padding-top: 5%;
 }
 
 /* Colour of certain containers */
@@ -44,6 +67,7 @@ h1, h2, h3, h4, h5, h6{
   width: 80%;
   margin: 0px auto;
   margin-top: -4%;/*used as a last resort*/
+  opacity: 0.9;
 }
 
 .portfolioHeader > div{
@@ -51,6 +75,42 @@ h1, h2, h3, h4, h5, h6{
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+
+
 
 /* Colour of the navbar mobile bars */
 .mobileMenuColor{
@@ -67,7 +127,7 @@ h1, h2, h3, h4, h5, h6{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
 }
 
 /* Colour of the hover underline */

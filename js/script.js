@@ -2,11 +2,10 @@
 
 
 // Header fading slideshow controls and images
-$('.portfolioHeader').chocolate({
-  images : ['/Users/jprice3/Desktop/JasminePrice-404TestMediaQueries/assets/img/flowerPainting2.png', '/Users/jprice3/Desktop/JasminePrice-404TestMediaQueries/assets/img/lavagif.gif', '/Users/jprice3/Desktop/JasminePrice-404TestMediaQueries/assets/img/russianDoll2.png'],
-  interval  : 3000,
-  speed     : 1000
-});
+
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
 
 
 // Creating the sticky navbar effect
