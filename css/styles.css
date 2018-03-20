@@ -1,0 +1,242 @@
+/* Jasmine Price DAT404 Stylesheet */
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Font for the text body */
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* font for the headings */
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+
+#header{
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Makes these sections 100% of the screen */
+#about, #contact{
+  height: 100%;
+}
+
+/* Colour of certain containers */
+.colorContainer{
+  background-color: #D6E4E5;
+}
+
+/* Size and positioning of the header slideshow */
+.portfolioHeader{
+  position: relative;
+  height: 150px;
+}
+
+.mainLogo{
+  position: relative;
+  z-index: 9999;
+  width: 80%;
+  margin: 0px auto;
+  margin-top: -4%;/*used as a last resort*/
+}
+
+.portfolioHeader > div{
+  height: 100% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Colour of the navbar mobile bars */
+.mobileMenuColor{
+  background-color: #1C3E4A;
+}
+
+/* Colour of the navbar */
+.navSection{
+  background-color: #077485;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Colour of the hover underline */
+.hvr-underline-from-center::before{
+  background: #1C3E4A;
+}
+
+/* P5 background positioning */
+#backgroundAnimation{
+  position:fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* Class to make the images rounded */
+.img-circle{
+  border-radius: 50%
+}
+
+/* Adding a shower to the images */
+.imageSahdow {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+/* Content Details */
+.content {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 50%
+}
+
+/* Overlay transition settings and position */
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+/* Content overlay "colour"/opacity */
+.content:hover .content-overlay{
+  opacity: 1;
+
+/* Content/Text details, including positioning and transition */
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Content/Text details during hover */
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+/* Text styling */
+.content-details h3{
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.content-details p{
+  color: white;
+  font-size: 0.8em;
+}
+
+/* Makes the fade in start from the bottom */
+.fadeIn-bottom{
+  top: 80%;
+}
+
+/* Content positoining for the contact page */
+.contactConainter{
+  padding-top: 9%;
+}
+
+/* Send button styling */
+.sendButton{
+  background-color: #1C3E4A;
+  color: white;
+  padding: 1.5%;
+}
+
+/* Hover colour for the send button */
+.sendButton:hover{
+  background-color: #077485;
+}
+
+/* Social media icon appearance */
+.btnFacebook{
+  background-color: #2A54AA;
+  color: white;
+}
+
+/* Hover colour */
+.btnFacebook:hover{
+  color: white;
+  background-color: #1A3978;
+}
+
+/* Social media icon appearance */
+.btnInsta{
+  background-color: #FF2A72;
+  color: white;
+}
+
+/* Hover colour */
+.btnInsta:hover{
+  color: white;
+  background-color: #C72159;
+}
+
+/* Social media icon appearance */
+.btnGit{
+  background-color: #323232;
+  color: white;
+}
+
+/* Hover colour */
+.btnGit:hover{
+  color: white;
+  background-color: #141414;
+}
+
+
+
+@media (min-width: 350px) {
+  .portfolioHeader{
+    height: 350px;
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .portfolioHeader{
+    height: 450px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .portfolioHeader{
+    height: 550px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .portfolioHeader{
+    height: 850px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .portfolioHeader{
+    height: 950px;
+  }
+}
