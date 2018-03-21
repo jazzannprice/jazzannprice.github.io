@@ -2,7 +2,6 @@
 
 
 // Header fading slideshow controls and images
-
   $(function() {
     $(".rslides").responsiveSlides();
   });
@@ -17,10 +16,12 @@ var navbar = document.getElementById("navbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
+var slidesHeight = $('.rslides').height();
+
 
 // Add the sticky class to the navbar when you reach its position. Then remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= slidesHeight) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
@@ -144,13 +145,24 @@ displayCircle(){
 }
 
 
+
 // Function to update the current year in the footer
 window.onload = function() {
   currentYear();
+  sliderReSize();
 };
+
+$(window).resize(function(){
+  sliderReSize();
+});
 
 function currentYear(){
   const date = new Date();
   const autoDate = document.querySelector('#autoDate');
   autoDate.textContent = date.getFullYear();
 };
+
+function sliderReSize(){
+  var slidesHeight2 = $('.rslides').height();
+  $("#header").height(slidesHeight2);
+}

@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6{
   text-align: center;
   background-color: #fff;
   position: relative;
-  height: 100%;
 }
 
 #header ul{
@@ -41,13 +40,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-/* Makes these sections 100% of the screen */
+/* Makes these sections 100% of the screen
 #about, #contact{
   height: 100%;
-}
+} */
 
 .aboutContainer{
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /* Colour of certain containers */
@@ -55,11 +55,6 @@ h1, h2, h3, h4, h5, h6{
   background-color: #D6E4E5;
 }
 
-/* Size and positioning of the header slideshow */
-.portfolioHeader{
-  position: relative;
-  height: 150px;
-}
 
 .mainLogo{
   position: relative;
@@ -68,12 +63,6 @@ h1, h2, h3, h4, h5, h6{
   margin: 0px auto;
   margin-top: -4%;/*used as a last resort*/
   opacity: 0.9;
-}
-
-.portfolioHeader > div{
-  height: 100% !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
 }
 
 .rslides {
@@ -109,9 +98,6 @@ h1, h2, h3, h4, h5, h6{
   }
 
 
-
-
-
 /* Colour of the navbar mobile bars */
 .mobileMenuColor{
   background-color: #1C3E4A;
@@ -143,13 +129,18 @@ h1, h2, h3, h4, h5, h6{
   left: 0;
 }
 
+/* Adding some image seperation to make it more responsive */
+.box {
+  margin-bottom: 30px;
+}
+
 /* Class to make the images rounded */
 .img-circle{
   border-radius: 50%
 }
 
 /* Adding a shower to the images */
-.imageSahdow {
+.imageShadow {
     box-shadow: 5px 10px 18px #888888;
 }
 
@@ -180,7 +171,7 @@ h1, h2, h3, h4, h5, h6{
 .content-details {
   position: absolute;
   text-align: center;
-  width: 90%;
+  width: 80%;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -213,7 +204,8 @@ h1, h2, h3, h4, h5, h6{
 
 /* Content positoining for the contact page */
 .contactConainter{
-  padding-top: 9%;
+padding-top: 5%;
+padding-bottom: 5%;
 }
 
 /* Send button styling */
@@ -265,38 +257,43 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-
-@media (min-width: 350px) {
-  .portfolioHeader{
-    height: 350px;
-  }
-}
-
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .portfolioHeader{
-    height: 450px;
+  .content-details h3{
+    font-size: 15px
+  }
+  .content-details p{
+    font-size: 0.6em;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .portfolioHeader{
-    height: 550px;
+  .content-details h3{
+    font-size: 20px
+  }
+  .content-details p{
+    font-size: 0.8em;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .portfolioHeader{
-    height: 850px;
+  .content-details h3{
+    font-size: 35px
   }
+  .content-details p{
+    font-size: 0.8em;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .portfolioHeader{
-    height: 950px;
+  .content-details h3{
+    font-size: 30px
+  }
+  .content-details p{
+    font-size: 0.8em;
   }
 }
