@@ -1,7 +1,7 @@
 // Jasmine Price DAT404 JavaScript
 
 
-// Header fading slideshow controls and images
+// Header fading slideshow function call
   $(function() {
     $(".rslides").responsiveSlides();
   });
@@ -18,7 +18,6 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 var slidesHeight = $('.rslides').height();
 
-
 // Add the sticky class to the navbar when you reach its position. Then remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= slidesHeight) {
@@ -30,11 +29,12 @@ function myFunction() {
 
 
 $(document).ready(function(){
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
+
       // Prevent default anchor click behavior
       event.preventDefault();
 
@@ -47,18 +47,18 @@ $(document).ready(function(){
         scrollTop: $(hash).offset().top
       }, 800, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
+        // Add hash (#) to URL when done scrolling
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 });
 
 
 // Scroll Reveal
 window.sr = ScrollReveal({ reset: true }); // Reset each time
-// window.sr = ScrollReveal(); // No reset
-// Scroll eveal settings
+
+// Scroll reveal settings
 sr.reveal('.foo-4', {
   viewFactor: 0.5
 });
@@ -145,23 +145,25 @@ displayCircle(){
 }
 
 
-
-// Function to update the current year in the footer
+// On load of the window execute currentYear and sliderReSize
 window.onload = function() {
   currentYear();
   sliderReSize();
 };
 
+// Reset slider position each time the window is resized
 $(window).resize(function(){
   sliderReSize();
 });
 
+// Function to update the current year in the footer
 function currentYear(){
   const date = new Date();
   const autoDate = document.querySelector('#autoDate');
   autoDate.textContent = date.getFullYear();
 };
 
+// Resizing the slider. Takes height of images and position and maps them so the images correctly resize
 function sliderReSize(){
   var slidesHeight2 = $('.rslides').height();
   $("#header").height(slidesHeight2);
