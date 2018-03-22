@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* Bringing the navbar position forward in the z axis */
 .navbar{
-  z-index: 100;
+  z-index: 300;
 }
 
 /* Positioning of the header */
