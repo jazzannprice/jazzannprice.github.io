@@ -3,216 +3,255 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio of Jasmine Price</title> <!-- Title of Webpage -->
-    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Link to bootstrap stylesheet -->
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> <!-- Link to fontawesome -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Julius+Sans+One" rel="stylesheet"> <!-- font HTML from google fonts-->
-    <link href="css/hover-min.css" rel="stylesheet"> <!-- Link to the hover effects stylesheet -->
-    <link href="css/styles.css" rel="stylesheet"> <!-- css link to my stylesheet, note must be underneath everything else -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portfolio of Jasmine Price</title> <!-- Title of Webpage -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Link to bootstrap stylesheet -->
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> <!-- Link to fontawesome -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Julius+Sans+One" rel="stylesheet">  font HTML from google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="css/hover-min.css" rel="stylesheet"> <!-- Link to the hover effects stylesheet -->
+  <link href="css/styles.css" rel="stylesheet"> <!-- css link to my stylesheet, note must be underneath everything else -->
 
 
   <body>
     <div id="header">
       <ul class="rslides"> <!-- The images used to create the fading slideshow in the header. IF I WISH TO ADD MORE TO SLIDER, COPY AND PASTE THE IMG AND IT SHOULD WORK -->
-        <li><img src="assets/img/chinabackground.png" alt=""></li>
+        <li><img src="assets/img/bannerBackground.png" alt=""></li>
+        <li><img src="assets/img/bannerBackground2.png" alt=""></li>
+        <li><img src="assets/img/bannerBackground3.png" alt=""></li>
+        <li><img src="assets/img/bannerBackground4.png" alt=""></li>
+        <li><img src="assets/img/bannerBackground5.png" alt=""></li>
+        <li><img src="assets/img/bannerBackground6.png" alt=""></li>
       </ul>
-      <div class="portfolioHeader"> <!-- The portfolio logo image in the header -->
-        <img class="mainLogo " src="assets/img/headerTitle.png">
+      <!--  <div class="portfolioHeader"> <!-- The portfolio logo image in the header
+      <img class="mainLogo " src="assets/img/headerTitle.png">
+    </div> -->
+
+
+  <!--<a  class="btn" href="#about">
+    <i class="arrow fas fa-angle-down fa-4x"> </i>
+  </a> -->
+
+  </div>
+
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark navSection text-uppercase"> <!-- Creation of the navbar -->
+    <a class="navbar-brand" href="#header">Jasmine Price</a> <!-- Left hand section of the navbar, and link -->
+    <button type="button" class="navbar-toggler navbar-toggler-right text-uppercase bg-primaryn mobileMenuColor text-white rounded" data-toggle="collapse" data-target="#mobileMenu"> <!-- Button to create responive navbar collapse -->
+      <i class="fas fa-bars"></i> <!-- Bar icon for responsive navbar -->
+    </button>
+    <div class="collapse navbar-collapse" id="mobileMenu"> <!-- Responsive mobile navbar collapse -->
+      <ul class="navbar-nav ml-auto">
+        <!-- List of all the sections in the navbar with links to the sections -->
+        <li class="nav-item hvr-underline-from-center">
+          <a class="nav-link" href="#header">Home</a>
+        </li>
+        <li class="nav-item hvr-underline-from-center">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item hvr-underline-from-center">
+          <a class="nav-link" href="#finalyearProjects">Final Year Projects</a>
+        </li>
+        <li class="nav-item hvr-underline-from-center">
+          <a class="nav-link" href="#earlyProjects">Early Projects</a>
+        </li>
+        <li class="nav-item hvr-underline-from-center">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="about" class="colorContainer"> <!-- About me section -->
+    <div id="backgroundAnimation"></div> <!-- The P5 background animation -->
+    <div class="container aboutContainer">
+      <div class="foo"> <!-- Scroll reveal -->
+        <h2 class="text-center">About Me</h2> <!-- Header for the about me section -->
+      </div>
+      <hr class="mb-5 w-50">
+      <div class="row foo ">
+        <div class="container row-sm-6 row-lg-6">
+          <h3 class="text-center"> Hello, I’m Jasmine! </h3>
+          <p class="text-center">I have recently finished my studies as a Digital Media Design student at Plymouth University. Technology has always fascinated me and my interest in digital design had driven me to study it. During my degree I completed modules on Web Design, Strategies for Digital Art and Technology, Animation, Virtual Reality, physical computing (Arduino) and many other creative design subjects. My portfolio includes a variety of examples to demonstrate my artistic and technical ability, including this website! Which I created using HTML, CSS and Javascript. </p>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center pb-2">
+      <form action="https://drive.google.com/file/d/1S55mqBP2UalGuNKVn8xUSlz3KDLfwArd/view?usp=sharing">
+        <button class="btn CVButton w-25" type="submit"> My CV </button> <!-- Send button for the form -->
+      </form>
+    </div>
+    <div class="container ">
+      <hr class="mb-5 w-50">
+      <h3 class="text-center"> What can I do? </h3>
+      <p class="text-center ">The projects I've developed required me to utilise a number of tools and software to produce varying digital content. Though I am still learning, below is some of the tools I am familiar with:  </p>
+      <div class="aboutContainer2 text-center d-flex flex-row justify-content-center ">
+        <div class="row-sm-5 row-lg-5">
+          <img src="assets/img/photoshop.png" >
+          <img src="assets/img/aftereffects.png" >
+          <img src="assets/img/premierpro.png" >
+          <img src="assets/img/maya.png" >
+          <img src="assets/img/unity.png" >
+          <img src="assets/img/html.png" >
+        </div>
       </div>
     </div>
 
 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark navSection text-uppercase"> <!-- Creation of the navbar -->
-      <a class="navbar-brand" href="#header">Jasmine Price</a> <!-- Left hand section of the navbar, and link -->
-      <button type="button" class="navbar-toggler navbar-toggler-right text-uppercase bg-primaryn mobileMenuColor text-white rounded" data-toggle="collapse" data-target="#mobileMenu"> <!-- Button to create responive navbar collapse -->
-        <i class="fas fa-bars"></i> <!-- Bar icon for responsive navbar -->
-      </button>
-      <div class="collapse navbar-collapse" id="mobileMenu"> <!-- Responsive mobile navbar collapse -->
-        <ul class="navbar-nav ml-auto">
-          <!-- List of all the sections in the navbar with links to the sections -->
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#header">Home</a>
-          </li>
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#universityWork">University Work</a>
-          </li>
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+  </section>
+  <section id="finalyearProjects"> <!-- Uni work section -->
+    <div class="container uniContainer">
+      <h2 class="text-center">Final Year Projects</h2> <!-- Header for the uni work section -->
+      <hr class="mb-5 w-50">
+      <p class="text-center mb-5">Below are examples of some of the projects I created in my final year at University. Hover your mouse over the images to reveal more information. Some of projects also have more documentation and videos if you select the image title and follow the link. </p>
+      <!-- This section seperates and spaces out 3 images in a row. The images have animations, overlays, shadows and some text -->
+      <div class="row text-center">
+
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/faceyourfears.png" class="img-fluid img-circle" >
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=pAYcdLCkjwY"> Face Your Fears </a> </h3>
+              <p class="content-text">This is my Final Year Project where I created a virtual reality simulation in which a person can become immersed in the subjective experiences of claustrophobia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/dissertation.png" class="img-fluid img-circle" >
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href= "https://drive.google.com/file/d/1ig2ngLj7pntxiEhPhj_7RDSWbA8oNwZk/view?usp=sharing"> Dissertation </a> </h3>
+              <p class="content-text">My dissertation on The Creative Potential of Virtual Reality in the Treatment of Phobias. This study examines the creative process of using virtual reality as a form of phobia treatment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/realtime.png" class="img-fluid img-circle">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href="https://youtu.be/NJk_WANSURE"> Fireflies </a></h3>
+              <p class="content-text">Fireflies is a visually dynamic installation that focuses on immersive interaction. The audience can interact with the characteristics of the projected fireflies using a projected Kinect system.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div> <!-- container close -->
+  </section>
 
 
-    <section id="about" class="colorContainer pt-5 pb-5"> <!-- About me section -->
-      <div id="backgroundAnimation"></div> <!-- The P5 background animation -->
-        <div class="container aboutContainer">
-          <div class="foo"> <!-- Scroll reveal -->
-            <h2 class="text-center">About Me</h2> <!-- Header for the about me section -->
-          </div>
-          <hr class="mb-5 w-50">
-            <div class="row foo d-flex align-items-center">
-              <div class="col-sm-6 col-lg-6">
-                <h3 class="text-center"> Hello, I’m Jasmine! </h3>
-                <p>I have recently finished my studies as a Digital Media Design student at Plymouth University. Technology has always fascinated me and my interest in digital design had driven me to study it. During my degree I completed modules on Web Design, Strategies for Digital Art and Technology, Animation, Virtual Reality and many other creative design subjects. This required me to utilise software from the Adobe Suite, Autodesk Maya, Arduino and Unity to produce varying digital content. My portfolio includes a variety of examples to demonstrate my artistic and technical ability. </p>
-              </div>
-              <div class="col-sm-6 col-lg-6">
-                <div class="content-img mePhoto imageShadow ">
-                  <img src="assets/img/mePhoto2.png" class="img-fluid img-circle"> <!-- Inserting an image, making it fluid and circular -->
-                </div>
-              </div>
-            </div>
-          </div> <!-- container close -->
-    </section>
-
-    <section id="universityWork"> <!-- Uni work section -->
-      <div class="container aboutContainer">
-        <h2 class="text-center mt-5">University Work</h2> <!-- Header for the uni work section -->
-        <hr class="mb-5 w-50">
-        <p class="mb-5">Below are examples of some of the projects I have created throughout my time at University. Hover your mouse over the images to reveal more information. Some of projects also have more documentation and videos if you select the image title and follow the link. </p>
-        <!-- This section seperates and spaces out 3 images in a row. The images have animations, overlays, shadows and some text -->
-        <div class="row text-center">
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/showreel.png" class="img-fluid img-circle" >
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=5mxxnhKSjFA"> Showreel </a> </h3>
-                <p class="content-text">A horror themed showreel I created in my first year of university. I developed this using After Effects as a showcase of my skills.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/faceyourfears.png" class="img-fluid img-circle" >
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=pAYcdLCkjwY"> Face Your Fears </a> </h3>
-                <p class="content-text">This is my Final Year Project where I created a virtual reality simulation in which a person can become immersed in the subjective experiences of claustrophobia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/dissertation.png" class="img-fluid img-circle" >
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> <a href= "https://drive.google.com/file/d/1ig2ngLj7pntxiEhPhj_7RDSWbA8oNwZk/view?usp=sharing"> Dissertation </a> </h3>
-                <p class="content-text">My dissertation on The Creative Potential of Virtual Reality in the Treatment of Phobias. This study examines the creative process of using virtual reality as a form of phobia treatment.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/lavaLamp.png" class="img-fluid img-circle" >
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=M3YS-eZUtgk"> Lava Lamp </a> </h3>
-                <p class="content-text">An interactive lava lamp coded with Maya Python</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/realtime.png" class="img-fluid img-circle">
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> <a href="https://youtu.be/NJk_WANSURE"> Fireflies </a></h3>
-                <p class="content-text">Fireflies is a visually dynamic installation that focuses on immersive interaction. The audience can interact with the characteristics of the projected fireflies using a projected Kinect system.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/can.png" class="img-fluid img-circle">
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=_S362OK-PI4"> The Can </a></h3>
-                <p class="content-text">A realistic short animation of a falling can, created using Maya.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/vfxExplosion.png" class="img-fluid img-circle" >
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=IHCNmHg4bLQ"> Explosion </a> </h3>
-                <p class="content-text">A VFX experiment using Maya particle systems.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/pawpoint.png" class="img-fluid img-circle" >
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> Pawpoint </h3>
-                <p class="content-text">A web and mobile application that links to a light-up dog tracking collar. Using this website the user can track their dogs location, set up a dog profile and change the light colours on the collar. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="content imageShadow hvr-grow box">
-              <div class="content-overlay"></div>
-                <img src="assets/img/lighthouse.png" class="img-fluid img-circle" >
-                <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> Lighthouse </h3>
-                <p class="content-text">This is a visually interactive application created using three.js. When the mouse is clicked, it cycles through the time of day, changing the appearance of the environment.</p>
-              </div>
+  <section id="earlyProjects"> <!-- Uni work section -->
+    <div class="container earlyContainer">
+      <h2 class="text-center">Early Projects</h2> <!-- Header for the uni work section -->
+      <hr class="mb-5 w-50">
+      <p class="text-center mb-5">Here are some examples of the work I developed throughout my time at University, including my first and second year projects. Hover your mouse over the images to reveal more information. Some of projects also have more documentation and videos if you select the image title and follow the link. </p>
+      <!-- This section seperates and spaces out 3 images in a row. The images have animations, overlays, shadows and some text -->
+      <div class="row text-center">
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/showreel.png" class="img-fluid img-circle" >
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=5mxxnhKSjFA"> Showreel </a> </h3>
+              <p class="content-text">A horror themed showreel I created in my first year of university. I developed this using After Effects as a showcase of my skills.</p>
             </div>
           </div>
         </div>
-      </div> <!-- container close -->
-    </section>
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/lavaLamp.png" class="img-fluid img-circle" >
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=M3YS-eZUtgk"> Lava Lamp </a> </h3>
+              <p class="content-text">An interactive lava lamp coded with Maya Python</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/can.png" class="img-fluid img-circle">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=_S362OK-PI4"> The Can </a></h3>
+              <p class="content-text">A realistic short animation of a falling can, created using Maya.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/vfxExplosion.png" class="img-fluid img-circle" >
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href="https://www.youtube.com/watch?v=IHCNmHg4bLQ"> Explosion </a> </h3>
+              <p class="content-text">A VFX experiment using Maya particle systems.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/pawpoint.png" class="img-fluid img-circle" >
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> <a href="http://pawpoint.herokuapp.com/"> Pawpoint </a> </h3>
+              <p class="content-text">A web and mobile application that links to a light-up dog tracking collar. Using this website the user can track their dogs location, set up a dog profile and change the light colours on the collar. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="content imageShadow hvr-grow box">
+            <div class="content-overlay"></div>
+            <img src="assets/img/lighthouse.png" class="img-fluid img-circle" >
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title"> Lighthouse </h3>
+              <p class="content-text">This is a visually interactive application created using three.js. When the mouse is clicked, it cycles through the time of day, changing the appearance of the environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- container close -->
+  </section>
 
 
-
-
-    <section id="contact" class="colorContainer contactConainter"> <!-- Contact section -->
-      <div class="container pt-5">
+  <section id="contact" class="colorContainer contactConainter"> <!-- Contact section -->
+    <div class="container">
+      <div class="foo"> <!-- Scroll reveal -->
+        <h2 class="text-center"> Contact Me</h2> <!-- Header for the contact section -->
+      </div>
+      <hr class="mb-5 w-50">
+      <div class="foo"> <!-- Scroll reveal -->
+        <p class="mb-5 text-center">Feel free to get in contact with me, I'd love to hear from you! I am also available on various forms of social media; the links are below. </p>
+      </div>
+      <form action="https://formspree.io/jazzann626@gmail.com" method="POST"> <!-- Form working. Form fill outs will be sent to my email -->
         <div class="foo"> <!-- Scroll reveal -->
-          <h2 class="text-center"> Contact Me</h2> <!-- Header for the contact section -->
-        </div>
-        <hr class="mb-5 w-50">
-        <div class="foo"> <!-- Scroll reveal -->
-          <p class="mb-5">Feel free to get in contact with me by filling in the form provided. I am also available on various forms of social media; the links are below. </p>
-        </div>
-        <form action="https://formspree.io/jazzann626@gmail.com" method="POST"> <!-- Form working. Form fill outs will be sent to my email -->
-          <div class="foo"> <!-- Scroll reveal -->
-            <!-- The contact form sections that the user can fill out, including a name, email, phone and message -->
-            <div class="form-group">
-              <input class="form-control" id="name" type="text" placeholder="Name" required="required" name="Name">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" name="Email">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" name="Number">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" name="Message"></textarea>
-            </div>
+          <!-- The contact form sections that the user can fill out, including a name, email, phone and message -->
+          <div class="form-group">
+            <input class="form-control" id="name" type="text" placeholder="Name" required="required" name="Name">
           </div>
           <div class="form-group">
-            <div class="text-center">
-              <div class="foo"> <!-- Scroll reveal -->
-                <button class="btn sendButton w-50 mb-3" type="submit">Send</button> <!-- Send button for the form -->
-              </div>
+            <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" name="Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" name="Message"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="text-center">
+            <div class="foo"> <!-- Scroll reveal -->
+              <button class="btn sendButton mb-3 mt-3 w-25" type="submit">Send</button> <!-- Send button for the form -->
             </div>
           </div>
-        </form>
+        </div>
+      </form>
 
-        <div class="foo"> <!-- Scroll reveal -->
-          <div class="text-center">
-            <!-- Social media list -->
-          <li class="list-inline-item socialMediaButtons pb-5">
+      <div class="foo"> <!-- Scroll reveal -->
+        <div class="text-center">
+          <!-- Social media list -->
+          <li class="list-inline-item socialMediaButtons">
             <a class="btn btnLinked text-center rounded-circle hvr-pop" href="https://www.linkedin.com/in/jasmine-price-81224a174/"> <!-- Link to my facebook and button styling -->
               <i class="fab fa-linkedin"></i> <!-- Linkedin icon -->
             </a>
@@ -223,26 +262,25 @@
             </a>
           </li>
           <li class="list-inline-item socialMediaButtons">
-            <a class="btn btnGit text-center rounded-circle hvr-pop" href="https://github.com/jazzannprice/jazzannprice.github.io"> <!-- Link to my github and button styling -->
+            <a class="btn btnGit text-center rounded-circle hvr-pop" href="https://github.com/jazzannprice"> <!-- Link to my github and button styling -->
               <i class="fab fa-github-square"></i> <!-- Github icon -->
             </a>
           </li>
-          </div>
         </div>
-      </div> <!-- Container close -->
-    </section>
+      </div>
+    </div> <!-- Container close -->
+  </section>
+
+  <footer class="py-2 text-center navSection text-white"> <!-- Footer section and styling -->
+    <small>Copyright &copy; <span id="autoDate"></span></small> <!-- Copyright section that uses an automatic date update -->
+  </footer>
 
 
-    <footer class="py-2 text-center navSection text-white"> <!-- Footer section and styling -->
-      <small>Copyright &copy; <span id="autoDate"></span></small> <!-- Copyright section that uses an automatic date update -->
-    </footer>
-
-
-    <script src="js/jquery.min.js"></script> <!-- Jquery script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script> <!-- Plugin for p5 -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <!-- Plugin for scroll reveal -->
-    <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap script -->
-    <script src="js/responsiveslides.js"></script> <!-- Plugin for fade slideshow -->
-    <script src="js/script.js"></script> <!-- Link to my javascript -->
-  </body>
+  <script src="js/jquery.min.js"></script> <!-- Jquery script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script> <!-- Plugin for p5 -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <!-- Plugin for scroll reveal -->
+  <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap script -->
+  <script src="js/responsiveslides.js"></script> <!-- Plugin for fade slideshow -->
+  <script src="js/script.js"></script> <!-- Link to my javascript -->
+</body>
 </html>

@@ -8,12 +8,12 @@ html, body {
 
 /* Font for the text body */
 body{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Font for the headings */
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Bringing the navbar position forward in the z axis */
@@ -45,22 +45,33 @@ h1, h2, h3, h4, h5, h6{
 /* Padding added to position the content and container */
 .aboutContainer{
   padding-top: 5%;
+}
+
+.aboutContainer2{
+
+  padding-bottom: 7%;
+}
+
+.uniContainer{
+  padding-top: 5%;
+}
+
+.earlyContainer{
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
 /* Colour of certain containers */
 .colorContainer{
-  background-color: #D6E4E5;
+  background-color: #dde2eb;
 }
 
 /* Positioning of the header logo */
-.mainLogo{
-  position: relative;
+.arrow{
+  position: absolute;
   z-index: 200;
-  width: 80%;
-  margin: 0px auto;
-  margin-top: -4%; /* Used as a last resort */
-  opacity: 0.9;
+  bottom: 15px;
+  color: white;
 }
 
 /* Positioning and settings of the fading sliders */
@@ -71,7 +82,7 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   padding: 0;
   margin: 0;
-  }
+}
 
 .rslides li {
   position: absolute;
@@ -79,13 +90,13 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   left: 0;
   top: 0;
-  }
+}
 
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
-  }
+}
 
 .rslides img {
   display: block;
@@ -93,17 +104,17 @@ h1, h2, h3, h4, h5, h6{
   float: left;
   width: 100%;
   border: 0;
-  }
+}
 
 
 /* Colour of the navbar mobile bars */
 .mobileMenuColor{
-  background-color: #1C3E4A;
+  background-color: #2d3543;
 }
 
 /* Colour of the navbar */
 .navSection{
-  background-color: #077485;
+  background-color: #596881;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -116,7 +127,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* Colour of the hover underline */
 .hvr-underline-from-center::before{
-  background: #1C3E4A;
+  background: #2d3543;
 }
 
 /* P5 background positioning */
@@ -139,7 +150,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* Adding a shower to the images */
 .imageShadow {
-    box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 /* Content Details */
@@ -171,7 +182,7 @@ h1, h2, h3, h4, h5, h6{
 .content:hover .content-overlay{
   opacity: 1;
 
-/* Content/Text details, including positioning and transition */
+  /* Content/Text details, including positioning and transition */
 }
 .content-details {
   position: absolute;
@@ -207,22 +218,39 @@ h1, h2, h3, h4, h5, h6{
   top: 80%;
 }
 
+/* CV button styling */
+.CVButton{
+  background-color: #2d3543;
+  color: white;
+  padding: 1.5%;
+
+}
+
+/* Hover colour for the send button */
+.CVButton:hover{
+  background-color: #596881;
+}
+
+.skillImages{
+
+}
+
 /* Content positoining for the contact page */
 .contactConainter{
-padding-top: 5%;
-padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /* Send button styling */
 .sendButton{
-  background-color: #1C3E4A;
+  background-color: #2d3543;
   color: white;
   padding: 1.5%;
 }
 
 /* Hover colour for the send button */
 .sendButton:hover{
-  background-color: #077485;
+  background-color: #596881;
 }
 
 /* Social media icon appearance */
@@ -307,21 +335,21 @@ padding-bottom: 5%;
 }
 
 a:link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:visited {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 a:active {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
